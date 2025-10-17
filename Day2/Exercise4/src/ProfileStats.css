@@ -1,0 +1,16 @@
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.stat {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.stat:hover {
+  color: #ff6600;
+}

@@ -1,0 +1,22 @@
+.state-card {
+  width: 280px;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.state-card h2 {
+  margin-bottom: 10px;
+}
+
+.state-card p {
+  margin: 6px 0;
+}
+
+.landmark {
+  margin-top: 10px;
+  font-style: italic;
+}
