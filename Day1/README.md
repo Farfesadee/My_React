@@ -1,0 +1,1 @@
+## This is a general README for all 4 Exercises in Day 1
