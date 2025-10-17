@@ -1,0 +1,109 @@
+:root {
+  --nigeria-green: #008000; /* primary green */
+  --nigeria-dark: #004d00;  /* darker green for borders */
+  --card-white: #ffffff;
+  --muted-green: #e6ffe6;
+  --text: #073642;
+}
+
+/* Page layout */
+body {
+  background-color: var(--muted-green);
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: var(--text);
+}
+
+.container {
+  max-width: 840px;
+  margin: 36px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center child cards horizontally */
+  gap: 16px;
+}
+
+/* center the card container vertically and horizontally */
+.page {
+  /* leave a little breathing room so focused UI doesn't hide behind browser chrome */
+  min-height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0; /* top/bottom spacing */
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(0,128,0,0.02), rgba(255,255,255,0.02));
+}
+
+.header {
+  text-align: center;
+  border-bottom: 3px solid var(--nigeria-dark);
+  padding: 18px 0 12px 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0.9));
+  border-radius: 8px;
+}
+.header {
+  width: 100%;
+  max-width: 700px; /* constrain header card width so it's visually centered */
+}
+.header h1 {
+  color: var(--nigeria-green);
+  margin: 0 0 6px 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.header p {
+  margin: 0;
+  font-style: italic;
+  color: rgba(7,54,66,0.8);
+}
+
+.location, .skills, .footer {
+  margin-top: 20px;
+  background: var(--card-white);
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(2,48,32,0.06);
+}
+
+.location {
+  border-left: 6px solid var(--nigeria-green);
+}
+
+.skills h2, .location h2 {
+  margin-top: 0;
+}
+
+.skills ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+.skills li { margin-bottom: 8px; }
+
+.footer {
+  text-align: center;
+  border-top: 3px solid var(--nigeria-dark);
+}
+.footer ul { list-style: none; padding: 0; margin: 8px 0 0 0; }
+.footer li { display: inline; margin: 0 10px; }
+.footer a { color: var(--nigeria-green); text-decoration: none; font-weight: 600; }
+.footer a:hover { text-decoration: underline; }
+
+/* small screens */
+@media (max-width: 520px) {
+  .container { margin: 18px; padding: 12px; }
+  .header h1 { font-size: 1.2rem; }
+}
+
+/* On small viewports allow scrolling and stack content from the top */
+@media (max-width: 480px) {
+  .page {
+    min-height: auto;
+    align-items: flex-start;
+    padding-top: 14px;
+    padding-bottom: 40px;
+  }
+}
+
+/* theme variables are declared in .theme-root; no empty :root rules */
