@@ -14,3 +14,5 @@ Sample Output:
 Chidi Okafor
 Lagos, Nigeria
 Welcome to my React journey!
+
+![Image](https://github.com/user-attachments/assets/2040e1f8-7efe-444e-9f95-29dbe6d4099b)

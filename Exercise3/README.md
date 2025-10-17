@@ -19,3 +19,6 @@ This is my first multi-component app.
 © 2025 My App
 
 Challenge: Add a navigation menu to the Header with 3 links
+
+
+![Image](https://github.com/user-attachments/assets/15aeff16-2e1f-4a97-8236-cbeed5b2bacd)
