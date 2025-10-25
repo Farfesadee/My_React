@@ -1,0 +1,38 @@
+.like-button-container {
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.liked {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.unliked {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+small {
+  color: #666;
+}
