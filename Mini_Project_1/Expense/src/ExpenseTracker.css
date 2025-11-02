@@ -1,0 +1,82 @@
+body {
+    background-color: bisque;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+       /* vertical center */
+  font-family: 'Times New Roman', serif;
+}
+
+
+.tracker-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.expense-form input,
+.expense-form select {
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.expense-form button {
+  padding: 8px 12px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 6px 12px;
+}
+
+.filter-buttons .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.stats {
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expense-item {
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clear-all {
+    gap: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: indianred;
+}
